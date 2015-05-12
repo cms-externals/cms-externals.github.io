@@ -68,6 +68,12 @@
         <ul>
           <li><a href='index.html'>Main page</a></li>
         </ul>
+        <h3 id='quick_start'>Tracked externals</h3>
+        <ul>
+          {% for repository in site.github.public_repositories %}
+            <li><a href="{{ repository.html_url }}">{{ repository.name }}</a>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
