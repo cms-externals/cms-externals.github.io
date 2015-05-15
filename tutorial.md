@@ -8,14 +8,14 @@ related:
 
 ## Creating a repo for sources which are not maintained in git / github
 
-For project which do not maintain their codebase in git / github, we simply
+For project which do not maintain their codebase in git / Github, we simply
 import the tarballs for new releases in the master branch of repository named
 as the project itself (e.g. `cms-externals/nss` for the `nss` library).
 
 - Create the repo by going to
   <https://github.com/organizations/cms-externals/repositories/new>. Simply
-  specify the repository name and add "<project> sources as used by CMS, please
-  refer to <original web site> for the official sources".
+  specify the repository name and add "`<project>` sources as used by CMS,
+  please   refer to `<original web site>` for the official sources".
 
 - Download the tarball and unpack it and cd to the sources directory. E.g.:
 
