@@ -15,7 +15,7 @@ as the project itself (e.g. `cms-externals/nss` for the `nss` library).
 - Create the repo by going to
   <https://github.com/organizations/cms-externals/repositories/new>. Simply
   specify the repository name and add "`<project>` sources as used by CMS,
-  please   refer to `<original web site>` for the official sources".
+  please   refer to `<original web site>` for the official sources". Do not select the "Add README" checkbox.
 
 - Download the tarball and unpack it and cd to the sources directory. E.g.:
 
