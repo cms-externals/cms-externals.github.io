@@ -49,3 +49,17 @@ as the project itself (e.g. `cms-externals/nss` for the `nss` library).
       git apply nss-3.17.4-sqlite.patch
       git commit -a -m 'Imported from nss-3.17.4-zlib'
       git push cms-externals cms/v3.17.4
+
+## Updating your spec file to pick up sources from github
+
+Once you have uploaded your new external in Github you now need to make sure
+that your spec file picks them up when building. To do so you need to have the
+following lines in your CMSDIST `.spec` file:
+
+    %define tag <commit>
+    %define branch cms/<branch point>
+    %define github_user cms-externals
+    Source: git+https://github.com/%github_user/<your-extenal>.git?obj=%{branch}/%{tag}&export=%{n}-%{realversion}&output=/%{n}-%{realversion}-%{tag}.tgz
+
+where `<commit>` is the actual commit hash which points to the sources you want
+to build and `<your external>` is the name you gave to the repository.
