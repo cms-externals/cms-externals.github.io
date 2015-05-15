@@ -36,7 +36,7 @@ as the project itself (e.g. `cms-externals/nss` for the `nss` library).
 - Tag and push the tag:
 
       git tag v3.17.4
-      git push v3.17.4
+      git push cms-externals v3.17.4
 
   make sure tags have a format as close as possible to vX.Y.Z, to homogenize
   things.
