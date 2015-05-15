@@ -28,7 +28,7 @@ as the project itself (e.g. `cms-externals/nss` for the `nss` library).
       git init
       git add -A
       git commit -m'Tarball as provided by https://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_17_4_RTM/src/nss-3.17.4.tar.gz'
-      git remote add cms-externals https://github.com/cms-externals/nss.git
+      git remote add cms-externals git@github.com:cms-externals/nss.git
       git push cms-externals master
 
   make sure you specify in the commit where you picked up the tarball from.
